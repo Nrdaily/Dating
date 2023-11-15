@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty X</title>
+    <link rel="stylesheet" href="./Css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Beauty<span>X</span></div>
+    </nav>
+    <div class="container">
+        <div class="hero">
+            <p>The new <strong>Beauty</strong> &  <strong>Porn Star</strong> Stars Pictures & Videos Generator</p>
+            <h1>Comming Soon</h1>
+            <hr>
+            <p id="launch"></p>
+        </div>
+    </div>
+    <div class="flexCol">
+        <div class="item">
+            <h1 class="heading">You can view, download & save your favorite pictures & videos</h1>
+            <div class="image">
+                <div>
+                    <img src="./images/pic-1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image">
+                <div>
+                    <img src="./images/pic-2.jpg" alt="">
+                </div>
+            </div>
+            <h1 class="heading">Go Live with the most beautiful Porn Stars & even Duet videos</h1>
+        </div>
+        <div class="item">
+            <h1 class="heading">See naked, sexy, curvy & beautiful women on post & live videos & duets</h1>
+            <div class="image">
+                <div>
+                    <img src="./images/pic-3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image">
+                <div>
+                    <img src="./images/pic-5.jpg" alt="">
+                </div>
+            </div>
+            <h1 class="heading">see the most beautiful models & even sign deals with them</h1>
+        </div>
+        <div class="item">
+            <div class="image">
+                <h1 class="heading">Hook up with the most beautiful women</h1>
+                <div>
+                    <img src="./images/pic-6.jpg" alt="">
+                </div>
+            </div>
+            <div class="image">
+                <div>
+                    <img src="./images/pic-7.jpg" alt="">
+                </div>
+                <h1 class="heading">Meet up with beautiful women all over the globe</h1>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image">
+                <h1 class="heading">Meet women of all careers</h1>
+                <div>
+                    <img src="./images/pic-8.jpg" alt="">
+                </div>
+            </div>
+            <div class="image">
+                <div>
+                    <img src="./images/pic-9.jpg" alt="">
+                </div>
+                <h1 class="heading">Meet with your best friend or crush</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container container-tw0">
+        <div class="hero">
+            <h1 class="heading">Join the ultimate commubity & date, explore & enjoy</h1>
+            <p>Enter your email to get notified when we launch this amazing community, <br> so you won't get passed when it's already very interesting.</p>
+            <form action="#">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Notify me</button>
+            </form>
+        </div>
+    </div>
+    <div class="flexCol flexCol-two">
+        <h1 class="heading">Beauty<span>X</span></h1>
+        <!-- <div class="item">
+            <div class="socials">
+                <ul>
+                    <li><a href="#">F</a></li>
+                    <li><a href="#">I</a></li>
+                    <li><a href="#">T</a></li>
+                </ul>
+            </div>
+        </div> -->
+    </div>
+    <script>
+        let countDate = new Date('Dec 31, 2023 00:00:00').getTime();
+        let x = setInterval(function(){
+            let now = new Date().getTime();
+            let distance = countDate - now;
+            let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            let minuites = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('launch').innerHTML = days + 'd ' + hours + 'h ' + minuites + 'm ' + seconds + 's '  ;
+
+            if(distance < 0){
+                clearInterval(x);
+                document.getElementById('launch').innerHTML = 'EXPIRED';
+            }
+        }, 1000)
+    </script>
+</body>
+</html>
